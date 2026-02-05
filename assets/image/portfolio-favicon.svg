@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sherinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF00FF" /> <stop offset="100%" stop-color="#8A2BE2" /> </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="100" fill="#0A0A0A"/>
+  <path d="M165 345C165 385 200 415 256 415C312 415 347 385 347 345C347 310 325 290 280 275L232 260C205 250 190 240 190 220C190 200 215 185 256 185C297 185 322 200 322 225H380C380 165 330 135 256 135C182 135 132 165 132 225C132 265 155 285 200 300L248 315C275 325 290 335 290 355C290 375 265 390 225 390C185 390 165 375 165 345H165Z" fill="url(#sherinGradient)"/>
+</svg>

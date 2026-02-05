@@ -1,0 +1,196 @@
+/* Fonts CSS*/
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: Poppins;
+  font-display: swap;
+  src: url(../assets/fonts/poppins-v24-latin-regular.woff2)
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: Satisfy;
+  font-display: swap;
+  src: url(../assets/fonts/satisfy-v22-latin-regular.woff2)
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: Ubuntu;
+  font-display: swap;
+  src: url(../assets/fonts/ubuntu-v21-latin-regular.woff2)
+}
+
+:root {
+  --astro-font-poppins: 'Poppins', '_font_fallback_1077395084822', serif
+}
+
+@font-face {
+  font-family: '_font_fallback_1077395084822';
+  size-adjust: 123.71%;
+  src: local('Times New Roman');
+  ascent-override: 84.87%;
+  descent-override: 28.29%;
+  line-gap-override: 8.08%
+}
+
+:root {
+  --astro-font-satisfy: 'Satisfy', '_font_fallback_955029870108', serif
+}
+
+@font-face {
+  font-family: '_font_fallback_955029870108';
+  size-adjust: 93.23%;
+  src: local('Times New Roman');
+  ascent-override: 100.25%;
+  descent-override: 52.48%;
+  line-gap-override: 1.78%
+}
+
+:root {
+  --astro-font-ubuntu: 'Ubuntu', '_font_fallback_356986376806', serif
+}
+
+@font-face {
+  font-family: '_font_fallback_356986376806';
+  size-adjust: 118.17%;
+  src: local('Times New Roman');
+  ascent-override: 78.87%;
+  descent-override: 15.99%;
+  line-gap-override: 2.37%
+}
+
+
+/* Color CSS*/
+:root {
+  --base: #000000;
+  --baseLite: rgba(0, 0, 0, .85);
+  --text: #fff;
+  --pH: 264;
+  --pS: 100%;
+  --pL: 50%;
+  --sH: 315;
+  --sS: 100%;
+  --sL: 50%;
+  --mH: 275;
+  --mS: 100%;
+  --mL: 47%;
+  --primary: var(--pH), var(--pS), var(--pL);
+  --secondary: var(--sH), var(--sS), var(--sL);
+  --mixColor: var(--mH), var(--mS), var(--mL);
+  --primaryLite: hsla(var(--primary), .6);
+  --primaryLiteAlt: hsla(var(--primary), .3);
+  --secondaryLite: hsla(var(--secondary), .6);
+  --secondaryLiteAlt: hsla(var(--secondary), .3);
+  --footer: hsl(264, 100%, 15%);
+  --footerSvgA: hsl(259, 75%, 10%);
+  --footerSvgB: hsl(256, 60%, 5%);
+  --gradient: linear-gradient(to right, hsl(var(--secondary)), hsl(var(--primary)), hsl(var(--primary)), hsl(var(--secondary)));
+  --gradientLite: linear-gradient(45deg, var(--primaryLite), hsl(var(--secondaryLite)));
+  --headerGradient: linear-gradient(180deg, rgba(0, 0, 0, .6), transparent);
+  --cardGradient: linear-gradient(45deg, hsl(0, 0%, 1%), var(--primaryLite));
+  --cardGradientAlt: linear-gradient(-135deg, hsl(0, 0%, 5%), var(--primaryLiteAlt));
+  --miscCardGradient: linear-gradient(-45deg, hsl(0, 0%, 1%), var(--primaryLiteAlt));
+  --overlayGradient: radial-gradient(farthest-corner at 100% 0%, hsla(0, 0%, 5%, .5), transparent);
+  --LinkBtnGradient: linear-gradient(-135deg, hsla(0, 0%, 9%, .8), hsla(0, 0%, 10%, .6));
+  --SkillGradient: linear-gradient(-135deg, hsla(276, 50%, 10%, .8), hsla(296, 50%, 10%, .5));
+  --SkillGradientAlt: linear-gradient(-135deg, hsla(276, 50%, 10%, .4), hsla(296, 50%, 10%, .25));
+  --orbitGradient: conic-gradient(transparent, transparent, hsl(var(--primary)), hsl(var(--secondary)), #fff);
+  --orbitGradientAlt: conic-gradient(#fff, hsl(var(--primary)), hsl(var(--secondary)), transparent, transparent);
+  --orbitDotColor: #fff;
+  --heroSocialColoe: #fff;
+  --contactSocialColor: hsla(0, 0%, 100%, .4);
+  --cursorColor: hsla(0, 0%, 100%, .6);
+  --cursorColorAlt: hsla(0, 0%, 100%, .8);
+  --dotColor: #fff
+}
+
+/* Reset CSS */
+
+a {
+  cursor: pointer !important;
+  color: var(--text);
+}
+
+a,
+button,
+h1,
+p {
+  text-decoration: none
+}
+
+img {
+  user-select: none;
+  pointer-events: none
+}
+
+.selectable p {
+  user-select: text;
+  cursor: text
+}
+
+@keyframes gradientPan {
+  0% {
+    background-position: 0 center
+  }
+
+  to {
+    background-position: -200%center
+  }
+}
+
+input,
+button,
+a,
+div {
+  -webkit-tap-highlight-color: transparent
+}
+
+::-webkit-scrollbar {
+  width: 16px
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--mixColor);
+  border-radius: 14px;
+  border: 6px solid transparent;
+  background-clip: content-box
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--text) !important;
+  transition: background-color 999999s ease-in-out 0s
+}
+
+
+/* HTML and Body CSS*/
+html {
+  font-family: Poppins !important;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+}
+
+body {
+  background-color: var(--base);
+  color: var(--text);
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}

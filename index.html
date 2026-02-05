@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis lenis-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/image/portfolio-favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sherin | My Portfolio | Full Stack Web Developer</title>
+    <link rel="stylesheet" href="./css/utilityStyle.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+</head>
+
+<body>
+    <header id='header' class='hidden lg:block sticky top-0 z-50'>
+        <div id='head-container'
+            class="w-full flex items-center justify-between backdrop-blur-[2px] bg-headerGradient px-6 py-2">
+            <a href='' id='head-port' class="Fade_Down font-bold font-satisfy text-[2em] active baseA"><span
+                    class='gradientText w-fit'>Portfolio.</span></a>
+            <nav id='header-nav' class="flex Header_Nav gap-6">
+                <a href='#about' class="Fade_Down baseA">About</a>
+                <a href='#skills' class="Fade_Down baseA">Skills</a>
+                <a href='#projects' class="Fade_Down baseA">Projects</a>
+                <a href='#experience' class="Fade_Down baseA">Assignments</a>
+                <a href='#contact' class="Fade_Down baseA">Contact</a>
+            </nav>
+            <div id='download-resume-head'>
+                <a href='#' class='Header_ActionBtn'>
+                    <div class='flex_center gap-2'>
+                        <p>Resume</p>
+                        <svg viewBox="0 0 24 24" width="18" fill="none" height="18" stroke="currentColor"
+                            stroke-width="2" xmlns="http://www.w3.org/2000/svg" class="lucide lucide-download"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" x2="12" y1="15" y2="3"></line>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id='Hero'
+            class="w-full flex items-center px-6 bg-background flex-col-reverse h-[calc(100vh-4rem)] justify-evenly lg:flex-row lg:justify-around overflow-hidden py-4">
+            <div id='short-intro' class="w-full flex-col flex items-center gap-8 justify-start lg:w-fit">
+                <div id='intro-context' class="text-center lg:text-[26px] lg:text-left text-[18px]">
+                    <p class="Fade_Stagger baseA">Hi! my name is,</p>
+                    <h1 class="font-ubuntu gradientText Fade_Stagger leading-tight lg:text-[9rem] text-[4em] baseA">
+                        Sherin.</h1>
+                    <p class="Fade_Stagger baseA">I'm a Fullstack Web Developer.</p>
+                    <p class="Fade_Stagger baseA">A curious learner and problem solver.</p>
+                </div>
+                <div id='social-media'
+                    class="w-full flex items-center py-4 Fade_Stagger gap-10 justify-center lg:justify-start baseA">
+                    <a href='' title='' alt='' class="Fade_Stagger baseA">
+                        <svg viewBox="0 0 16 16" width="30" fill="currentColor" height="30" stroke="currentColor"
+                            stroke-width="0" xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)"
+                            color="#fff">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href='' title='' alt='' class="Fade_Stagger baseA">
+                        <svg viewBox="0 0 16 16" width="30" fill="currentColor" height="30" stroke="currentColor"
+                            stroke-width="0" xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)"
+                            color="var(--text)">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href='' title='' alt='' class="Fade_Stagger baseA">
+                        <svg viewBox="0 0 24 24" width="30" fill="currentColor" height="30" stroke="currentColor"
+                            stroke-width="0" xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)"
+                            color="#fff">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href='' title='' alt='' class="Fade_Stagger baseA">
+                        <svg viewBox="0 0 16 16" width="30" fill="currentColor" height="30" stroke="currentColor"
+                            stroke-width="0" xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)"
+                            color="#fff">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href='' title='' alt='' class="Fade_Stagger baseA">
+                        <svg viewBox="0 0 16 16" width="30" fill="currentColor" height="30" stroke="currentColor"
+                            stroke-width="0" xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)"
+                            color="#fff">
+                            <path
+                                d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div id="photo-into" class="flex_center aspect-square Hero_Orbit lg:w-[500px] relative w-[360px]">
+                <div class="flex_center aspect-square rounded-full Spring_Up w-[50%] z-10 baseA">
+                    <img src="./assets/image/image.png" alt="sherin photo" class="object-cover" height="180"
+                        width="250" loading="eager" sizes="(max-width: 640px) 180px, 250px"
+                        style="border-radius: 50%;" />
+                </div>
+                <div class="Spring_Up Hero_Trail Trail1 baseA">
+                    <span class="Orbit_Dot"></span>
+                </div>
+                <div class="Spring_Up Hero_Trail Trail2 baseA">
+                    <span class="Orbit_Dot"></span>
+                </div>
+                <div class="Spring_Up Hero_Trail Trail3 baseA">
+                    <span class="Orbit_Dot"></span>
+                </div>
+                <div class="Spring_Up Hero_Trail Trail4 baseA">
+                    <span class="Orbit_Dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="w-full bg-background px-6 py-4 min-h-screen pt-14">
+            <div class="baseA flex flex-col justify-center Fade_Up h-screen my-4">
+                <div class="baseA flex items-center relative Fade_Up Title-Tag Title_Line open primary">
+                    <span class="text-[1.5em]">&lt;</span>
+                    <p class="text-[1.6em]">About Me</p>
+                    <span class="text-[1.5em]">&gt;</span>
+                </div>
+                <div class="flex_center flex-col w-full h-full lg:flex-row gap-8 py-10">
+                    <img src="./assets/image/image.png" alt="sherin photo" class="object-cover baseA" height="180"
+                        width="250" loading="eager" sizes="(max-width: 640px) 180px, 250px"
+                        style="border-radius: 50%;" />
+                    <div
+                        class="w-full flex-col Fade_Up gap-4 border-primary flex items-start justify-center lg:border-l lg:pl-10 lg:w-[60%] md:w-[80%] py-8 baseA">
+                        <h2 class="Fade_Up font-bold text-[1.5em] baseA">
+                            Hey there! 👋🏻
+                        </h2>
+                        <p class="Fade_Up text-justify baseA">
+                            I'm Sherin, a developer who finds beauty in the 'how' behind the 'what.' While I work across
+                            the
+                            full stack—moving between the interactivity of React and the structured logic of Java—my
+                            true motivation is the continuous cycle of learning and problem-solving.
+                        </p>
+                        <p class="Fade_Up text-justify baseA">
+                            I don’t just want to write code that works; I want to understand the systems that power it.
+                            This curiosity is what led me to dive deep into Java internals, explore the real-time
+                            complexities of WebRTC, and manage environments in Linux. I am currently inspired by the
+                            world of automation testing, seeking ways to build software that is as resilient as it is
+                            functional.
+                        </p>
+                        <p class="Fade_Up text-justify baseA">
+                            For me, programming isn't a destination—it's a toolkit for solving puzzles. I’m a fresher by
+                            title, but a lifelong learner by nature, always looking for the next challenge that requires
+                            me to think a little deeper and learn something new.
+                        </p>
+                    </div>
+                </div>
+                <div class="baseA flex items-center relative Fade_Up Title-Tag Title_Line close primary">
+                    <span class="text-[1.5em]">&lt;/</span>
+                    <p class="text-[1.4em]">About Me</p>
+                    <span class="text-[1.5em]">&gt;</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full bg-background px-6 py-4 min-h-screen pt-14" id="skills">
+            <div class="flex_center Fade_Up Title-Tag primary relative Title_Line text-[2em] baseA">
+                <span>&lt;</span>
+                <p>Tech Stack</p><span>/&gt;</span>
+            </div>
+            <div class="flex flex-col justify-center items-start Fade_Up gap-2 lg:flex-row baseA">
+                <div class="flex_center flex-col w-full h-full gap-4 Fade_Up py-4 xs:p-4 baseA">
+                    <div class="flex_center Fade_Up Title-Tag primary relative baseA">
+                        <p class="text-[1.6em]">Front-End</p><span class="text-[1.5em]">()</span>
+                    </div>
+                    <div class="Fade_Up gap-4 grid grid-cols-3 lg:grid-cols-5 md:grid-cols-4 baseA">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="HTML">
+                            <div class="flex_center aspect-square min-h-[35px]">
+                                <img alt="HTML_Icon" decoding="async" height="35" loading="lazy"
+                                    src="../assets/image/htmlLogo.svg" width="35">
+                            </div>
+                            <span class="text-[0.9em]">HTML</span>
+                        </a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="CSS">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="CSS_Icon" decoding="async"
+                                    height="35" loading="lazy" src="../assets/image/cssLogo.svg" width="35"></div>
+                            <span class="text-[0.9em]">CSS</span>
+                        </a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="JavaScript">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="JavaScript_Icon"
+                                    decoding="async" height="35" loading="lazy" src="../assets/image/jsLogo.svg"
+                                    width="35"></div><span class="text-[0.9em]">JavaScript</span>
+                        </a>
+                        <a href="https://react.dev/"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="React.js">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="React.js_Icon"
+                                    decoding="async" height="35" loading="lazy" src="../assets/image/reactLogo.svg"
+                                    width="35"></div><span class="text-[0.9em]">React.js</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex_center flex-col w-full h-full gap-4 Fade_Up py-4 xs:p-4 baseA">
+                    <div class="flex_center Fade_Up Title-Tag primary relative baseA">
+                        <p class="text-[1.6em]">Back-End</p><span class="text-[1.5em]">()</span>
+                    </div>
+                    <div class="Fade_Up gap-4 grid grid-cols-3 lg:grid-cols-5 md:grid-cols-4 baseA">
+                        <a href="https://nodejs.org/"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="Node.js">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="Node.js_Icon" decoding="async"
+                                    height="35" loading="lazy" src="../assets/image/nodeJsLogo.svg" width="35">
+                            </div><span class="text-[0.9em]">Node.js</span>
+                        </a>
+                        <a href="https://www.mysql.com/"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="MySQL">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="MySQL_Icon" decoding="async"
+                                    height="35" loading="lazy" src="../assets/image/mysqlLogo.svg" width="35">
+                            </div><span class="text-[0.9em]">MySQL</span>
+                        </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Glossary/REST"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="REST API">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="REST_API_Icon"
+                                    decoding="async" height="35" loading="lazy" src="../assets/image/restApi.svg"
+                                    width="35"></div><span class="text-[0.9em]">REST API</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-start gap-2 lg:flex-row">
+                <div class="flex_center flex-col w-full h-full gap-4 Fade_Up py-4 xs:p-4 baseA">
+                    <div class="flex_center Fade_Up Title-Tag primary relative baseA">
+                        <p class="text-[1.6em]">Programming</p><span class="text-[1.5em]">()</span>
+                    </div>
+                    <div class="Fade_Up gap-4 grid grid-cols-3 lg:grid-cols-5 md:grid-cols-4 baseA">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="JavaScript">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="JavaScript_Icon"
+                                    decoding="async" height="35" loading="lazy" src="../assets/image/jsLogo.svg"
+                                    width="35"></div><span class="text-[0.9em]">JavaScript</span>
+                        </a>
+                        <a href="https://www.oracle.com/java/"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="Java">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="Java_Icon" decoding="async"
+                                    height="35" loading="lazy" src="../assets/image/javaLogo.svg" width="35"></div>
+                            <span class="text-[0.9em]">Java</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex_center flex-col w-full h-full gap-4 Fade_Up py-4 xs:p-4 baseA">
+                    <div class="flex_center Fade_Up Title-Tag primary relative baseA">
+                        <p class="text-[1.6em]">Tech &amp; Tools</p><span class="text-[1.5em]">()</span>
+                    </div>
+                    <div class="Fade_Up gap-4 grid grid-cols-3 lg:grid-cols-5 md:grid-cols-4 baseA">
+                        <a href="https://www.npmjs.com/"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="NPM">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="NPM_Icon" decoding="async"
+                                    height="35" loading="lazy" src="../assets/image/npm.svg" width="35"></div>
+                            <span class="text-[0.9em]">NPM</span>
+                        </a>
+                        <a href="https://git-scm.com/"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="Git">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="Git_Icon" decoding="async"
+                                    height="35" loading="lazy" src="../assets/image/gitLogo.svg" width="35"></div>
+                            <span class="text-[0.9em]">Git</span>
+                        </a>
+                        <a href="https://github.com/"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="GitHub">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="GitHub_Icon" decoding="async"
+                                    height="35" loading="lazy" src="../assets/image/gitHub.svg" width="35">
+                            </div><span class="text-[0.9em]">GitHub</span>
+                        </a>
+                        <a href="https://vitejs.dev/"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="Vite.js">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="Vite.js_Icon" decoding="async"
+                                    height="35" loading="lazy" src="../assets/image/vite.svg" width="35">
+                            </div><span class="text-[0.9em]">Vite.js</span>
+                        </a>
+                        <a href="https://code.visualstudio.com/"
+                            class="flex_center aspect-square Fade_Stagger bg-skillGradient flex-col gap-2 min-w-24 rounded-lg baseA"
+                            target="_blank" rel="noreferrer" title="VS Code">
+                            <div class="flex_center aspect-square min-h-[35px]"><img alt="VS_Code_Icon" decoding="async"
+                                    height="35" loading="lazy" src="../assets/image/vsCode.svg" width="35">
+                            </div><span class="text-[0.9em]">VS Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full bg-background px-6 py-4 min-h-screen pt-14" id="projects">
+            <div class="Fade_Up my-4 undefined baseA">
+                <div class="flex items-center relative Fade_Up Title-Tag Title_Line open secondary baseA">
+                    <span class="text-[1.5em]">&lt;</span>
+                    <p class="text-[1.6em]">My Projects</p><span class="text-[1.5em]">&gt;</span>
+                </div>
+                <div
+                    class="w-full grid Fade_Up gap-8 grid-cols-1 lg:grid-cols-3 lg:px-12 md:grid-cols-2 pb-6 relative baseA">
+                    <div
+                        class="flex_center flex-col w-full Card_Main Project_Stagger bg-cardGradient h-fit mt-3 opacity-0 overflow-hidden rounded-[0.4em] baseA">
+                        <a href="#/ticketDesk" class="w-full rounded-[0.4em] Projects_Preview relative">
+                            <img alt="deskPreview" decoding="async" height="246" loading="lazy"
+                                src="../assets/image/deskPreview.png" width="437"
+                                class="w-full Card_Image Card_Main bg-cover opacity-50 transition-opacity"
+                                sizes="(max-width: 720px) 346px, 437px" style="border-radius:.4em .4em 0 100%"> <img
+                                alt="Desk Logo" decoding="async" height="50" loading="lazy"
+                                src="../assets/image/desk-logo.png" width="50" class="absolute bottom-6 left-6" />
+                        </a>
+                        <div class="w-full px-4 text-[0.95em]">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-ubuntu py-3 text-[1.4em]">Desk Ticket List</h3>
+                                <div class="flex"><a href="https://arms-v3.vercel.app/" class="flex Projects_Link"
+                                        target="_blank" rel="noreferrer" title="ARMS v3 Live"><svg viewBox="0 0 24 24"
+                                            width="24" fill="none" height="24" stroke="currentColor" stroke-width="2"
+                                            xmlns="http://www.w3.org/2000/svg" class="lucide lucide-external-link"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M15 3h6v6"></path>
+                                            <path d="M10 14 21 3"></path>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        </svg> <span class="sr-only">Demo for Desk Ticket List</span></a></div>
+                            </div>
+                            <p class="text-center"> I’ve recreated a feature from the Zoho Desk product called the
+                                Ticket List. In my project, you can view a list of these tickets, see who they’re
+                                assigned to, &amp; also access a few additional details.</p>
+                            <div class="flex_center w-full gap-4 py-3">
+                                <img alt="html" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/htmlLogo.svg" width="22" />
+                                <img alt="css" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/cssLogo.svg" width="22" />
+                                <img alt="javascript" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/jsLogo.svg" width="22" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex_center flex-col w-full Card_Main Project_Stagger bg-cardGradient h-fit mt-3 opacity-0 overflow-hidden rounded-[0.4em] baseA">
+                        <a href="consoleProject/java" class="w-full rounded-[0.4em] Projects_Preview relative">
+                            <img alt="Java Project" decoding="async" height="246" loading="lazy"
+                                src="../assets/image/trainBooking.jpg" width="437"
+                                class="w-full Card_Image bg-cover opacity-50 transition-opacity"
+                                sizes="(max-width: 720px) 346px, 437px" style="border-radius:.4em .4em 0 100%" />
+                            <img alt="Train Logo" decoding="async" height="50" loading="lazy"
+                                src="../assets/image/trainBookingLogo.png" width="50"
+                                class="absolute bottom-6 left-6" />
+                        </a>
+                        <div class="w-full px-4 text-[0.95em]">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-ubuntu py-3 text-[1.4em]">Train Booking System (Java Console
+                                    Application)</h3>
+                                <div class="flex">
+                                    <a href="https://train-booking-system.netlify.app/" class="flex Projects_Link"
+                                        target="_blank" rel="noreferrer" title="Train Booking System Live">
+                                        <svg viewBox="0 0 24 24" width="24" fill="none" height="24"
+                                            stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"
+                                            class="lucide lucide-external-link" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M15 3h6v6"></path>
+                                            <path d="M10 14 21 3"></path>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        </svg>
+                                        <span class="sr-only">Demo for Train Booking System</span></a>
+                                </div>
+                            </div>
+                            <p class="text-center">A Java console-based application that uses JDBC to connect with a
+                                MySQL database for managing train details, ticket booking, cancellation, and seat
+                                availability. The project demonstrates core Java concepts along with database
+                                connectivity for persistent data handling.</p>
+                            <div class="flex_center w-full gap-4 py-3">
+                                <img alt="TechIcon Java" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/javaLogo.svg" width="22" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex_center flex-col w-full Card_Main Project_Stagger bg-cardGradient h-fit mt-3 opacity-0 overflow-hidden rounded-[0.4em] baseA">
+                        <a href="Tharam" class="w-full rounded-[0.4em] Projects_Preview relative">
+                            <img alt="Test Management" decoding="async" height="246" loading="lazy"
+                                src="../assets/image/TSDash.png" width="437"
+                                class="w-full Card_Image bg-cover opacity-50 transition-opacity"
+                                sizes="(max-width: 720px) 346px, 437px" style="border-radius:.4em .4em 0 100%" />
+                            <img alt="Project_Logo_Tharam" decoding="async" height="55" loading="lazy"
+                                src="../assets/image/Tharam-logo.png" width="55" class="absolute bottom-6 left-6">
+                        </a>
+                        <div class="w-full px-4 text-[0.95em]">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-ubuntu py-3 text-[1.4em]">Tharam</h3>
+                                <div class="flex">
+                                    <div class="flex_center px-1 gap-2 py-0.5 text-orange-400"><svg viewBox="0 0 24 24"
+                                            width="16" fill="none" height="16" stroke="currentColor" stroke-width="2"
+                                            xmlns="http://www.w3.org/2000/svg" class="lucide lucide-wrench"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                                            </path>
+                                        </svg> <span class="text-[0.8em]">Under Development</span></div><a
+                                        href="https://xrecon.netlify.app/" class="flex Projects_Link" target="_blank"
+                                        rel="noreferrer" title="XRecon Live"><svg viewBox="0 0 24 24" width="24"
+                                            fill="none" height="24" stroke="currentColor" stroke-width="2"
+                                            xmlns="http://www.w3.org/2000/svg" class="lucide lucide-external-link"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M15 3h6v6"></path>
+                                            <path d="M10 14 21 3"></path>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        </svg> <span class="sr-only">Demo for Tharam</span></a>
+                                </div>
+                            </div>
+                            <p class="text-center">A team-based project developed to manage test cases, track test
+                                execution, and record test results efficiently. The system helps organize testing
+                                activities, improve collaboration, and ensure proper documentation of the testing
+                                process.</p>
+                            <div class="flex_center w-full gap-4 py-3">
+                                <img alt="TechIcon HTML" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/htmlLogo.svg" width="22" />
+                                <img alt="TechIcon CSS" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/cssLogo.svg" width="22" />
+                                <img alt="TechIcon JavaScript" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/jsLogo.svg" width="22" />
+                                <img alt="TechIcon Java" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/javaLogo.svg" width="22" />
+                                <img alt="TechIcon REST API" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/restApi.svg" width="22" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex_center flex-col w-full Card_Main Project_Stagger bg-cardGradient h-fit mt-3 opacity-0 overflow-hidden rounded-[0.4em] baseA">
+                        <a class="w-full rounded-[0.4em] Projects_Preview relative">
+                            <img alt="Project-DSA-Java" decoding="async" height="246" loading="lazy"
+                                src="../assets/image/DSA-profile.jpg" width="437"
+                                class="w-full Card_Image bg-cover opacity-50 transition-opacity"
+                                sizes="(max-width: 720px) 346px, 437px" style="border-radius:.4em .4em 0 100%">
+                            <img alt="Project_Logo_YoaTube" decoding="async" height="55" loading="lazy"
+                                src="../assets/image/dsa-logo.jpg" width="55" class="absolute bottom-6 left-6">
+                        </a>
+                        <div class="w-full px-4 text-[0.95em]">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-ubuntu py-3 text-[1.4em]">DSA LinkedHashMap Implementation</h3>
+                                <div class="flex"><a href="https://yoatube.netlify.app/" class="flex Projects_Link"
+                                        target="_blank" rel="noreferrer" title="YoaTube Live"><svg viewBox="0 0 24 24"
+                                            width="24" fill="none" height="24" stroke="currentColor" stroke-width="2"
+                                            xmlns="http://www.w3.org/2000/svg" class="lucide lucide-external-link"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M15 3h6v6"></path>
+                                            <path d="M10 14 21 3"></path>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        </svg> <span class="sr-only">Demo for DSA LinkedHashMap
+                                            Implementation</span></a></div>
+                            </div>
+                            <p class="text-center">DSA LinkedHashMap Implementation is a Java-based project
+                                demonstrating the implementation of a LinkedHashMap data structure.</p>
+                            <div class="flex_center w-full gap-4 py-3">
+                                <img alt="TechIcon Java" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/javaLogo.svg" width="22" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex_center flex-col w-full Card_Main Project_Stagger bg-cardGradient h-fit mt-3 opacity-0 overflow-hidden rounded-[0.4em] baseA">
+                        <a class="w-full rounded-[0.4em] Projects_Preview relative"><img
+                                alt="Project_ScreenShot_Markdown Editor" decoding="async" height="246" loading="lazy"
+                                src="../assets/image/mark-down.png" width="437"
+                                class="w-full Card_Image bg-cover opacity-50 transition-opacity"
+                                sizes="(max-width: 720px) 346px, 437px" style="border-radius:.4em .4em 0 100%">
+                            <img alt="Project_Logo_Markdown Editor" decoding="async" height="55" loading="lazy"
+                                src="../assets/image/logo.png" width="55" class="absolute bottom-6 left-6">
+                        </a>
+                        <div class="w-full px-4 text-[0.95em]">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-ubuntu py-3 text-[1.4em]">Markdown Management Editor</h3>
+                                <div class="flex">
+                                    <a href="mark-down-editor" class="flex Projects_Link" target="_blank"
+                                        rel="noreferrer" title="Markdown Editor Live"><svg viewBox="0 0 24 24"
+                                            width="24" fill="none" height="24" stroke="currentColor" stroke-width="2"
+                                            xmlns="http://www.w3.org/2000/svg" class="lucide lucide-external-link"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M15 3h6v6"></path>
+                                            <path d="M10 14 21 3"></path>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        </svg> <span class="sr-only">Demo for Markdown Management Editor</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                An application that allows users to create, manage, and store Markdown content with
+                                automatic conversion into HTML for easy viewing and presentation.
+                            </p>
+                            <div class="flex_center w-full gap-4 py-3">
+                                <img alt="TechIcon React.js" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/reactLogo.svg" width="22" />
+                                <img alt="TechIcon Nodejs" decoding="async" height="22" loading="lazy"
+                                    src="../assets/image/nodeJsLogo.svg" width="22" />
+                                <img src="../assets/image/mysqlLogo.svg" alt="TechIcon MySQL" decoding="async"
+                                    height="22" loading="lazy" width="22" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center relative Fade_Up Title-Tag Title_Line close secondary baseA">
+                    <span class="text-[1.5em]">&lt;/</span>
+                    <p class="text-[1.4em]">My Projects</p><span class="text-[1.5em]">&gt;</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full bg-background px-6 py-4 min-h-screen pt-14 lg:mb-[15em] mb-16" id="contact">
+            <div class="flex_center Fade_Up Title-Tag primary relative Title_Line text-[2em] baseA">
+                <span>&lt;</span>
+                <p>Contact</p><span>/&gt;</span>
+            </div>
+            <div class="flex_center flex-col w-full p-4 text-[1.2em] text-center">
+                <h3 class="Fade_Up font-ubuntu gradientText lg:text-[2.4rem] text-[2rem] baseA">
+                    Let's collaborate!</h3>
+                <p class="Fade_Up baseA">
+                    Interested in working with me? Send a message below.</p>
+                <p class="Fade_Up baseA">or
+                    just to say hello. 😉</p>
+            </div>
+            <div class="flex_center flex-col w-full h-full gap-4 lg:flex-row lg:gap-10 lg:px-20 pb-16 pt-8">
+                <div class="flex_center flex-col w-full relative">
+                    <div class="aspect-square rounded-full Fade_Up border-2 border-contactSocialColor border-dashed lg:max-w-[450px] lg:scale-1 max-w-[350px] mb-8 md:mb-0 md:mt-7 scale-[0.9] w-full baseA"
+                        id="socialCircle">
+                        <a href="https://www.facebook.com/"
+                            class="flex_center aspect-square rounded-full absolute bg-background lg:p-4 lg:w-16 outline-2 outline-contactSocialColor outline-dashed p-2 socialIcon w-12"
+                            target="_blank" rel="noreferrer" title="Facebook" aria-label="Facebook"
+                            style="left: 417px; top: 193px;"><svg viewBox="0 0 16 16" width="30" fill="currentColor"
+                                height="30" stroke="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg"
+                                style="color:var(--heroSocialColor)">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/sherin/"
+                            class="flex_center aspect-square rounded-full absolute bg-background lg:p-4 lg:w-16 outline-2 outline-contactSocialColor outline-dashed p-2 socialIcon w-12"
+                            target="_blank" rel="noreferrer" title="Instagram" aria-label="Instagram"
+                            style="left: 351.392px; top: 34.6081px;"><svg viewBox="0 0 16 16" width="30"
+                                fill="currentColor" height="30" stroke="currentColor" stroke-width="0"
+                                xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                </path>
+                            </svg> </a><a href="mailto:mdsherin33@gmail.com"
+                            class="flex_center aspect-square rounded-full absolute bg-background lg:p-4 lg:w-16 outline-2 outline-contactSocialColor outline-dashed p-2 socialIcon w-12"
+                            target="_blank" rel="noreferrer" title="Gmail" aria-label="Gmail"
+                            style="left: 193px; top: -31px;"><svg viewBox="0 0 24 24" width="30" fill="currentColor"
+                                height="30" stroke="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg"
+                                style="color:var(--heroSocialColor)" role="img">
+                                <title></title>
+                                <path
+                                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/"
+                            class="flex_center aspect-square rounded-full absolute bg-background lg:p-4 lg:w-16 outline-2 outline-contactSocialColor outline-dashed p-2 socialIcon w-12"
+                            target="_blank" rel="noreferrer" title="Twitter" aria-label="Twitter"
+                            style="left: 34.6081px; top: 34.6081px;"><svg viewBox="0 0 24 24" width="30"
+                                fill="currentColor" height="30" stroke="currentColor" stroke-width="0"
+                                xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </svg> </a>
+                        <a href="mailto:mohamed.sherin@zohocorp.com"
+                            class="flex_center aspect-square rounded-full absolute bg-background lg:p-4 lg:w-16 outline-2 outline-contactSocialColor outline-dashed p-2 socialIcon w-12"
+                            target="_blank" rel="noreferrer" title="Zoho Mail" aria-label="Zoho Mail"
+                            style="left: -31px; top: 193px;">
+                            <img alt="zoho-mail" decoding="async" height="22" loading="lazy" src="./assets/image/zoho-mail.webp" width="22"
+                                style="color:var(--heroSocialColor)">
+                        </a>
+                    </div>
+                    <img alt="ContactArt" decoding="async" height="500" loading="lazy"
+                        src="./assets/image/ContactMe.svg" width="500"
+                        class="Fade_Up absolute bottom-10 md:bottom-2 md:w-[400px] w-[300px] baseA" />
+                </div>
+                <style>
+                    astro-island,
+                    astro-slot,
+                    astro-static-slot {
+                        display: contents
+                    }
+                </style>
+                <script>(self.Astro || (self.Astro = {})).load = async t => { await (await t())() }, window.dispatchEvent(new Event("astro:load")), (() => { var t = Object.defineProperty, e = (e, r, n) => ((e, r, n) => r in e ? t(e, r, { enumerable: !0, configurable: !0, writable: !0, value: n }) : e[r] = n)(e, "symbol" != typeof r ? r + "" : r, n); { let t = { 0: t => s(t), 1: t => n(t), 2: t => new RegExp(t), 3: t => new Date(t), 4: t => new Map(n(t)), 5: t => new Set(n(t)), 6: t => BigInt(t), 7: t => new URL(t), 8: t => new Uint8Array(t), 9: t => new Uint16Array(t), 10: t => new Uint32Array(t), 11: t => 1 / 0 * t }, r = e => { let [r, n] = e; return r in t ? t[r](n) : void 0 }, n = t => t.map(r), s = t => "object" != typeof t || null === t ? t : Object.fromEntries(Object.entries(t).map((([t, e]) => [t, r(e)]))); class i extends HTMLElement { constructor() { super(...arguments), e(this, "Component"), e(this, "hydrator"), e(this, "hydrate", (async () => { var t; if (!this.hydrator || !this.isConnected) return; let e = null == (t = this.parentElement) ? void 0 : t.closest("astro-island[ssr]"); if (e) return void e.addEventListener("astro:hydrate", this.hydrate, { once: !0 }); let r, n = this.querySelectorAll("astro-slot"), i = {}, o = this.querySelectorAll("template[data-astro-template]"); for (let t of o) { let e = t.closest(this.tagName); null != e && e.isSameNode(this) && (i[t.getAttribute("data-astro-template") || "default"] = t.innerHTML, t.remove()) } for (let t of n) { let e = t.closest(this.tagName); null != e && e.isSameNode(this) && (i[t.getAttribute("name") || "default"] = t.innerHTML) } try { r = this.hasAttribute("props") ? s(JSON.parse(this.getAttribute("props"))) : {} } catch (t) { let e = this.getAttribute("component-url") || "<unknown>", r = this.getAttribute("component-export"); throw r && (e += ` (export ${r})`), console.error(`[hydrate] Error parsing props for component ${e}`, this.getAttribute("props"), t), t } await this.hydrator(this)(this.Component, r, i, { client: this.getAttribute("client") }), this.removeAttribute("ssr"), this.dispatchEvent(new CustomEvent("astro:hydrate")) })), e(this, "unmount", (() => { this.isConnected || this.dispatchEvent(new CustomEvent("astro:unmount")) })) } disconnectedCallback() { document.removeEventListener("astro:after-swap", this.unmount), document.addEventListener("astro:after-swap", this.unmount, { once: !0 }) } connectedCallback() { if (this.hasAttribute("await-children") && "interactive" !== document.readyState && "complete" !== document.readyState) { let t = () => { document.removeEventListener("DOMContentLoaded", t), e.disconnect(), this.childrenConnectedCallback() }, e = new MutationObserver((() => { var e; (null == (e = this.lastChild) ? void 0 : e.nodeType) === Node.COMMENT_NODE && "astro:end" === this.lastChild.nodeValue && (this.lastChild.remove(), t()) })); e.observe(this, { childList: !0 }), document.addEventListener("DOMContentLoaded", t) } else this.childrenConnectedCallback() } async childrenConnectedCallback() { let t = this.getAttribute("before-hydration-url"); t && await import(t), this.start() } async start() { let t = JSON.parse(this.getAttribute("opts")), e = this.getAttribute("client"); if (void 0 !== Astro[e]) try { await Astro[e]((async () => { let t = this.getAttribute("renderer-url"), [e, { default: r }] = await Promise.all([import(this.getAttribute("component-url")), t ? import(t) : () => () => { }]), n = this.getAttribute("component-export") || "default"; if (n.includes(".")) { this.Component = e; for (let t of n.split(".")) this.Component = this.Component[t] } else this.Component = e[n]; return this.hydrator = r, this.hydrate }), t, this) } catch (t) { console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`, t) } else window.addEventListener(`astro:${e}`, (() => this.start()), { once: !0 }) } attributeChangedCallback() { this.hydrate() } } e(i, "observedAttributes", ["props"]), customElements.get("astro-island") || customElements.define("astro-island", i) } })()</script>
+                <astro-island await-children="" client="load" component-export="ContactForm"
+                    component-url="/_astro/Preact.Bi-QIjRk.js"
+                    opts="{&quot;name&quot;:&quot;ContactForm&quot;,&quot;value&quot;:true}" props="{}"
+                    renderer-url="/_astro/client.wIg91ANj.js" uid="24PMPG">
+                    <form
+                        class="flex_center flex-col w-full Fade_Up bg-LinkBtnGradient lg:max-w-[650px] outline outline-1 outline-white/20 px-4 py-2 rounded-md baseA">
+                        <label class="w-full flex-col h-fit flex items-start justify-center noCustomCursor px-1 py-2"
+                            for="name">Name<input autocomplete="name"
+                                class="w-full bg-background border-none mt-1 outline-none p-2 rounded-md text-foreground"
+                                id="name" name="name" placeholder="Enter your Name" required=""
+                                type="text"></label><label
+                            class="w-full flex-col h-fit flex items-start justify-center noCustomCursor px-1 py-2"
+                            for="email">Email<input autocomplete="email"
+                                class="w-full bg-background border-none mt-1 outline-none p-2 rounded-md text-foreground"
+                                id="email" name="email" placeholder="example@gmail.com" required=""
+                                type="email"></label><label
+                            class="w-full flex-col h-fit flex items-start justify-center noCustomCursor px-1 py-2"
+                            for="message">Message<textarea
+                                class="w-full bg-background border-none mt-1 outline-none p-2 rounded-md text-foreground resize-none"
+                                id="message" name="message" placeholder="Enter your Message"
+                                rows="5"></textarea></label>
+                        <div class="w-full gap-4 flex items-center justify-start"><button
+                                class="flex_center bg-background border-none gap-4 lg:px-20 mx-2 my-1 outline outline-1 outline-white/20 px-6 py-2 rounded-md text-foreground"
+                                type="submit"><span>Submit</span><svg viewBox="0 0 24 24" width="24" fill="none"
+                                    height="24" stroke="currentColor" stroke-width="2"
+                                    xmlns="http://www.w3.org/2000/svg" class="lucide lucide-send-horizontal"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m3 3 3 9-3 9 19-9Z"></path>
+                                    <path d="M6 12h16"></path>
+                                </svg></button><span></span></div>
+                    </form>
+                </astro-island>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full flex-col flex items-center bg-footer bottom-0 h-[50vh] justify-between px-4 py-8 relative">
+        <svg viewBox="0 321.18 960 219.82" xmlns="http://www.w3.org/2000/svg"
+            class="w-full -translate-y-full absolute pb-4" id="visual" version="1.1">
+            <path
+                d="M0 389L26.7 371.8C53.3 354.7 106.7 320.3 160 321.2C213.3 322 266.7 358 320 386C373.3 414 426.7 434 480 419.5C533.3 405 586.7 356 640 339.7C693.3 323.3 746.7 339.7 800 362.3C853.3 385 906.7 414 933.3 428.5L960 443L960 541L933.3 541C906.7 541 853.3 541 800 541C746.7 541 693.3 541 640 541C586.7 541 533.3 541 480 541C426.7 541 373.3 541 320 541C266.7 541 213.3 541 160 541C106.7 541 53.3 541 26.7 541L0 541Z"
+                fill="transparent"></path>
+            <path
+                d="M0 355L26.7 350C53.3 345 106.7 335 160 347.8C213.3 360.7 266.7 396.3 320 421.2C373.3 446 426.7 460 480 466.2C533.3 472.3 586.7 470.7 640 453.2C693.3 435.7 746.7 402.3 800 400.7C853.3 399 906.7 429 933.3 444L960 459L960 541L933.3 541C906.7 541 853.3 541 800 541C746.7 541 693.3 541 640 541C586.7 541 533.3 541 480 541C426.7 541 373.3 541 320 541C266.7 541 213.3 541 160 541C106.7 541 53.3 541 26.7 541L0 541Z"
+                fill="var(--footerSvgB)"></path>
+            <path
+                d="M0 505L26.7 502.2C53.3 499.3 106.7 493.7 160 484.5C213.3 475.3 266.7 462.7 320 444.2C373.3 425.7 426.7 401.3 480 409C533.3 416.7 586.7 456.3 640 475C693.3 493.7 746.7 491.3 800 479.3C853.3 467.3 906.7 445.7 933.3 434.8L960 424L960 541L933.3 541C906.7 541 853.3 541 800 541C746.7 541 693.3 541 640 541C586.7 541 533.3 541 480 541C426.7 541 373.3 541 320 541C266.7 541 213.3 541 160 541C106.7 541 53.3 541 26.7 541L0 541Z"
+                fill="var(--footerSvgA)"></path>
+            <path
+                d="M 0 501 L 26.7 498 C 53.3 495 106.7 489 160 490 C 213.3 491 266.7 499 320 501.3 C 373.3 503.7 426.7 500.3 480 491.3 C 533.3 482.3 586.7 467.7 640 464.7 C 693.3 461.7 746.7 470.3 800 469.3 C 853.3 468.3 906.7 457.7 933.3 452.3 L 960 447 L 960 542 L 933.3 542 C 906.7 542 853.3 542 800 542 C 746.7 542 693.3 542 640 542 C 586.7 542 533.3 542 480 542 C 426.7 542 373.3 542 320 542 C 266.7 542 213.3 542 160 542 C 106.7 542 53.3 542 26.7 542 L 0 541 L 0 501 Z"
+                fill="var(--footer)"></path>
+        </svg>
+        <div class="flex_center flex-col gap-2 w-full">
+            <p class="gradientText" id="logo-s">S</p>
+            <span>Sherin | Portfolio</span>
+        </div>
+        <div class="grid-cols-3 grid gap-x-20 gap-y-10 lg:gap-20 lg:grid-cols-6">
+            <a href='' title='' alt='' class="Fade_Stagger baseA">
+                <svg viewBox="0 0 16 16" width="30" fill="currentColor" height="30" stroke="currentColor"
+                    stroke-width="0" xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)"
+                    color="#fff">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                    </path>
+                </svg>
+            </a>
+            <a href='' title='' alt='' class="Fade_Stagger baseA">
+                <svg viewBox="0 0 16 16" width="30" fill="currentColor" height="30" stroke="currentColor"
+                    stroke-width="0" xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)"
+                    color="var(--text)">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                    </path>
+                </svg>
+            </a>
+            <a href='' title='' alt='' class="Fade_Stagger baseA">
+                <svg viewBox="0 0 24 24" width="30" fill="currentColor" height="30" stroke="currentColor"
+                    stroke-width="0" xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)"
+                    color="#fff">
+                    <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                    </path>
+                </svg>
+            </a>
+            <a href='' title='' alt='' class="Fade_Stagger baseA">
+                <svg viewBox="0 0 16 16" width="30" fill="currentColor" height="30" stroke="currentColor"
+                    stroke-width="0" xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)"
+                    color="#fff">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                    </path>
+                </svg>
+            </a>
+            <a href='' title='' alt='' class="Fade_Stagger baseA">
+                <svg viewBox="0 0 16 16" width="30" fill="currentColor" height="30" stroke="currentColor"
+                    stroke-width="0" xmlns="http://www.w3.org/2000/svg" style="color:var(--heroSocialColor)"
+                    color="#fff">
+                    <path
+                        d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z">
+                    </path>
+                </svg>
+            </a>
+        </div><span>© Copyright 2026-2029 Sherin</span>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
